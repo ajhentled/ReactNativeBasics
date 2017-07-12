@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-<<<<<<< HEAD
 import {
   LayoutAnimation,
   Platform,
@@ -57,21 +56,6 @@ class ListItem extends Component {
           {this.renderDescription()}
         </View>
       </TouchableWithoutFeedback>
-=======
-import { StyleSheet, Text } from 'react-native';
-import { CardSection } from './common';
-
-class ListItem extends Component {
-  render() {
-    const { titleStyle } = styles;
-
-    return(
-      <CardSection>
-        <Text style={titleStyle}>
-          {this.props.library.title}
-        </Text>
-      </CardSection>
->>>>>>> 60a83e9549319f322eaeb70bc810a2c43747c7fc
     );
   }
 }
@@ -83,7 +67,6 @@ const styles = StyleSheet.create({
   }
 });
 
-<<<<<<< HEAD
 const mapStateToProps = (state, ownProps) => {
   const expanded = state.selectedLibraryId === ownProps.library.id;
 
@@ -91,6 +74,3 @@ const mapStateToProps = (state, ownProps) => {
 };
 
 export default connect(mapStateToProps, actions)(ListItem);
-=======
-export default ListItem;
->>>>>>> 60a83e9549319f322eaeb70bc810a2c43747c7fc
